@@ -1,0 +1,661 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+main{
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 130vh;
+    background-image: linear-gradient(to left, #3a28b0, #5435b8,#673ebd,#9654c9,#af61d0);
+}
+/* This is first section  */
+#first{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+/* this is 1st div css  */
+.item1{
+    position: absolute;
+    top: 50px;
+    left: 250px;
+    width: 200px;
+    height: 200px;
+    background-color: #1ABC9C;
+}
+.box1{
+    display: flex;
+    justify-content: center;
+    margin-top: 85px;
+}
+.bar1, .bar2, .bar3, .bar4{
+    background-color: white;
+    height: 50px;
+    width: 10px;
+    position: relative;
+    border-radius: 10px;
+    margin: 2px;
+    animation: load 1s infinite alternate;
+}
+.bar2{
+    animation-delay: 0.3s;
+}
+.bar3{
+    animation-delay: 0.6s;
+}
+.bar4{
+    animation-delay: 0.9s;
+}
+@keyframes load{
+    50%{
+        transform: scaleY(1.5);
+    }
+}
+
+/* this is 2nd div css  */
+.item2{
+    position: absolute;
+    top: 50px;
+    left: 452px;
+    width: 200px;
+    height: 200px;
+    background-color: #34495E;
+}
+.item2>div{
+    border-radius: 50px;
+    width:20px;
+    height:20px;
+    border:1px solid white;
+    position: absolute;
+    top: 90px;
+    left: 90px;
+    
+}
+.item2>div:nth-child(1){
+    animation: round 1.5s infinite linear;
+    border:2px solid white;
+    width: 10px;
+    height: 10px;
+    left: 95px;
+    top: 95px;
+}
+.item2>div:nth-child(2){
+    animation: round2 1.5s infinite linear;	
+    animation-delay:-0.7s;
+}
+.item2>div:nth-child(3){
+    animation:loader2 1.5s infinite linear;	
+}
+@keyframes round{
+    0%{
+        transform: scale(1);
+        
+    }
+    
+    50%{
+        transform: scale(0.2);
+        
+    }
+    100%{
+            transform: scale(1);
+    }
+}
+@keyframes round2{
+    0%{
+        transform: scale(1);
+        opacity: 1
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: 0.7;
+    }
+    100%{
+        transform: scale(3);
+        opacity: 0;
+    }
+
+}
+/* this is 3rd div css  */
+.item3{
+    position: absolute;
+    top: 50px;
+    left: 654px;
+    width: 200px;
+    height: 200px;
+    background-color: #F39C12;
+}
+.box3{
+    position: absolute;
+    top: 65px;
+    left: 68px;
+    display: grid;
+    grid-template-columns: 19px 19px 0px;
+    grid-template-rows: 18px 18px;
+    justify-content: center;
+}
+.box3>div{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 100px;
+    border: 2px solid white;
+    animation: goal 1s linear infinite;
+}
+.box3>div:nth-child(1){
+    animation-delay: 0.3s;
+}
+.box3>div:nth-child(2){
+    animation-delay: 0.3s;
+}
+.box3>div:nth-child(3){
+    animation-delay: 0.3s;
+}
+.box3>div:nth-child(4){
+    animation-delay: 0.6s;
+}
+.box3>div:nth-child(5){
+    animation-delay: 0s;
+}
+.box3>div:nth-child(6){
+    animation-delay: 0.6s;
+}
+.box3>div:nth-child(7){
+    animation-delay: 0.6s;
+}
+.box3>div:nth-child(8){
+    animation-delay: 0.9s;
+}
+.box3>div:nth-child(9){
+    animation-delay: 0.9s;
+}
+@keyframes goal{
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* this is 4th div css  */
+.item4{
+    position: absolute;
+    top: 50px;
+    left: 855px;
+    width: 200px;
+    height: 200px;
+    background-color: #9B59B6;
+}
+.box4{
+    display: flex;
+    justify-content: center;
+    margin: 90px 50px;
+    animation: dil 1s linear infinite;
+}
+.box4 i{
+    font-size: 30px;
+}
+/* .heart{
+    transform: rotate(-50deg);
+    display: inline;
+}
+.heart1{
+    display: inline;
+}
+.heart2{
+    transform: rotate(20deg);
+} */
+@keyframes dil{
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* this is second section  */
+#second{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+/* this is 5th div css  */
+.item5{
+    position: absolute;
+    top: 249px;
+    left: 250px;
+    width: 200px;
+    height: 200px;
+    background-color: #3498DB;
+}
+.box5{
+    display: flex;
+    justify-content: center;
+}
+.spinner{
+    height: 60px;
+    width: 60px;
+    margin: 55px;
+    border: 2px solid #b6b4b4e8;
+    border-left-color: #ffffff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin{
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* this is 6th div css  */
+.item6{
+    position: absolute;
+    top: 249px;
+    left: 453px;
+    width: 200px;
+    height: 200px;
+    background-color: #E74C3C;;
+}
+.box6{
+    display: flex;
+    margin: 90px 60px;
+}
+.box6 .dot{
+    height: 10px;
+    width: 15px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 50%;
+    animation: dot 1s linear infinite;
+}
+@keyframes dot{
+  from{
+      transform: scale(0);
+      opacity: 0;
+      width: 20px;
+  }
+  to{
+      transform: scale(1);
+      opacity: 1;
+      width: 30px;
+
+  }
+}
+/* this is 7th div css  */
+.item7{
+    position: absolute;
+    top: 249px;
+    left: 652px;
+    width: 200px;
+    height: 200px;
+    background-color: #2ecc71;
+}
+.box7{
+    margin: 80px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    animation: preloader 10s infinite linear;
+}
+.box7 span{
+    position: absolute;
+    border: 2px solid white;
+    background-color: #2ecc71;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    transform-origin: center 30px;
+    margin-left: 16px;
+    /* animation: preloader 10s infinite linear; */
+}
+.box7 span:nth-child(1){
+    animation-delay:-0.187s;
+}
+.box7 span:nth-child(2){
+    transform: rotate(36deg);
+    animation-delay:-0.374s; 
+}
+.box7 span:nth-child(3){
+    transform: rotate(72deg);
+    animation-delay: 0.5s;
+}
+.box7 span:nth-child(4){
+    transform: rotate(108deg);
+    animation-delay: 0.7;
+}
+.box7 span:nth-child(5){
+    transform: rotate(144deg);
+    animation-delay: 0.9;
+}
+.box7 span:nth-child(6){
+    transform: rotate(180deg);
+    animation-delay: 1.1;
+}
+.box7 span:nth-child(7){
+    transform: rotate(216deg);
+    animation-delay: 1.3;
+}
+.box7 span:nth-child(8){
+    transform: rotate(252deg);
+    animation-delay: 1.5;
+}
+.box7 span:nth-child(9){
+    transform: rotate(288deg);
+    animation-delay: 1.7;
+}
+.box7 span:nth-child(10){
+    transform: rotate(324deg);
+    animation-delay: 1.9;
+}
+@keyframes preloader{
+    0%{
+        background-color: green;
+    }
+    100%{
+        background-color: white;
+    }
+}
+
+/* this is 8th div css  */
+.item8{
+    position: absolute;
+    top: 249px;
+    left: 855px;
+    width: 200px;
+    height: 200px;
+    background-color: #2C3E50;
+}
+.loader_bg{
+    margin: 70px;
+    width: 20%;
+    height: 10vh;
+}
+.loader{
+    border: 0 solid white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+.loader::before, .loader::after{
+    content: '';
+    border: 1px solid white;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation:  loader 2s linear infinite;
+    opacity: 0;
+}
+.loader::before{
+    animation-delay: .5s;
+}
+@keyframes loader{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+/* this is 3rd section  */
+#third{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+/* this is 9th div css  */
+.item9{
+    position: absolute;
+    top: 448px;
+    left: 250px;
+    width: 200px;
+    height: 200px;
+    background-color: #F1C40F;
+}
+.box9{
+    margin: 80px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    animation: preloader 5s linear infinite;
+}
+.box9 span{
+    position: absolute;
+    background: white;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    transform-origin: center 20px;
+    margin-left: 16px;
+}
+.box9 span:nth-child(2){
+    transform: rotate(36deg);
+}
+.box9 span:nth-child(3){
+    transform: rotate(72deg);
+}
+.box9 span:nth-child(4){
+    transform: rotate(108deg);
+}
+.box9 span:nth-child(5){
+    transform: rotate(144deg);
+}
+.box9 span:nth-child(6){
+    transform: rotate(180deg);
+}
+.box9 span:nth-child(7){
+    transform: rotate(216deg);
+}
+.box9 span:nth-child(8){
+    transform: rotate(252deg);
+}
+.box9 span:nth-child(9){
+    transform: rotate(288deg);
+}
+.box9 span:nth-child(10){
+    transform: rotate(324deg);
+}
+@keyframes preloader{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* this is 10th div css  */
+
+.item10{
+    position: absolute;
+    top: 448px;
+    left: 453px;
+    width: 200px;
+    height: 200px;
+    background-color: #8E44AD;
+}
+.box10{
+    display: flex;
+    justify-content: center;
+}
+.half-spin{
+    height: 60px;
+    width: 60px;
+    margin: 55px;
+    border: 2px solid #8e44ad;
+    border-left-color: #ffffff;
+    border-radius: 50%;
+    animation: spin2 1s linear infinite;
+}
+@keyframes spin2{
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* this is 11th div css  */
+.item11{
+    position: absolute;
+    top: 448px;
+    left: 652px;
+    width: 200px;
+    height: 200px;
+    background-color: #2980B9;
+}
+.box11{
+    display: flex;
+    justify-content: center;
+    margin-top: 85px;
+}
+.line1, .line2, .line3, .line4, .line5{
+    background-color: white;
+    height: 40px;
+    width: 5px;
+    position: relative;
+    border-radius: 10px;
+    margin: 2px;
+    animation: signal 1s infinite alternate;
+}
+.line1{
+    animation-delay: 0.6s;
+    height: 49px;
+}
+.line2{
+    animation-delay: 0.3s;
+    height: 45px;
+}
+.line3{
+    animation-delay: 0.1s;
+    height: 40px;
+}
+.line4{
+    animation-delay: 0.3s;
+    height: 45px;
+}
+.line5{
+    animation-delay: 0.6s;
+    height: 49px;
+}
+@keyframes signal{
+    50%{
+        transform: scaleY(1.5);
+    }
+}
+/* this is 12th div css  */
+.item12{
+    position: absolute;
+    top: 448px;
+    left: 855px;
+    width: 200px;
+    height: 200px;
+    background-color: #E74C3C;
+}
+.box12{
+    position: relative;
+    left: 72px;
+    top: 60px;
+}
+.box12>div{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    border: 2px solid white;
+}
+.box12>div:nth-child(1){
+    top:50px;
+    animation:load12child1 2s infinite linear;
+}
+.box12>div:nth-child(2){
+    left:25px;
+    animation:load12child2 2s infinite linear;
+    
+}
+.box12>div:last-child{
+    animation:load12child3 2s infinite linear;
+    top:50px;
+    left:50px;
+}
+@keyframes load12child1{
+    33%{
+        transform: translate(25px, -50px);
+    }
+    66%{
+        transform: translate(50px, 0px);
+    }
+    99%{
+        transform: translate(0px ,0px);
+    }
+}
+@keyframes load12child2{
+    33%{
+        transform: translate(25px, 50px);
+    }
+    66%{
+        transform: translate(-25px, 50px);
+    }
+    99%{
+        transform: translate(0px, 0px);
+    }
+}
+@keyframes load12child3{
+    33%{
+        /* here we are setting values a/c to x-axis and y-axis*/
+        transform: translate(-50px, 0px);
+    
+    }
+    66%{
+        transform: translate(-25px, -50px);
+}
+    99%{
+        transform: translate(0px, 0px);
+    }
+}
+
+
+.fourth{
+    position: relative;
+}
+.btns{
+    position: absolute;
+    top: 680px;
+    left: 503px;
+}
+i{
+    margin: 10px;
+    font-size: 20px;
+    margin-left: -11px;
+    color: white;
+}
+button{
+    background: none;
+    border: 2px solid white;
+    color: rgb(218, 212, 212);
+    padding: 10px 55px;
+}
+button:hover{
+    cursor: pointer;
+}
+p{
+    position: absolute;
+    top: 748px;
+    left: 600px;
+    color: white;
+}
+a{
+    color: white;
+}
